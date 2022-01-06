@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Driver{
   public static void main(String[] args) {
 
@@ -12,7 +14,7 @@ public class Driver{
     Sorts.bubble(glen0);
     System.out.println( "\nArrayList glen0 after sorting:\n" + glen0 );
 
-    ArrayList coco0 = populate( 10, 1, 1000 );
+    ArrayList coco0 = Sorts.populate( 10, 1, 1000 );
     System.out.println( "\nArrayList coco0 before sorting:\n" + coco0 );
     Sorts.bubble(coco0);
     System.out.println( "\nArrayList coco0 after sorting:\n" + coco0 );
@@ -28,7 +30,7 @@ public class Driver{
     Sorts.selection(glen1);
     System.out.println( "\nArrayList glen1 after sorting:\n" + glen1 );
 
-    ArrayList coco1 = populate( 10, 1, 1000 );
+    ArrayList coco1 = Sorts.populate( 10, 1, 1000 );
     System.out.println( "\nArrayList coco1 before sorting:\n" + coco1 );
     Sorts.selection(coco1);
     System.out.println( "\nArrayList coco1 after sorting:\n" + coco1 );
@@ -44,7 +46,7 @@ public class Driver{
     Sorts.insertion(glen2);
     System.out.println( "\nArrayList glen2 after sorting:\n" + glen2 );
 
-    ArrayList coco2 = populate( 10, 1, 1000 );
+    ArrayList coco2 = Sorts.populate( 10, 1, 1000 );
     System.out.println( "\nArrayList coco2 before sorting:\n" + coco2 );
     Sorts.insertion(coco2);
     System.out.println( "\nArrayList coco2 after sorting:\n" + coco2 );

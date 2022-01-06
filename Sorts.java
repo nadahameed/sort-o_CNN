@@ -28,7 +28,7 @@ public class Sorts{
 
   public static void bubble(ArrayList<Comparable> ow) {
     for( int passCtr = 1; passCtr < ow.size(); passCtr++ ) {
-      System.out.println( "commencing pass #" + passCtr + "..." );
+      //System.out.println( "commencing pass #" + passCtr + "..." );
 
       //iterate thru first to next-to-last element, comparing to next
       for( int i = 0; i < ow.size()-1; i++ ) {
@@ -49,16 +49,16 @@ public class Sorts{
     int maxPos;
 
     for( int pass = ow.size()-1; pass > 0; pass-- ) {
-      System.out.println( "\nbegin pass " + (ow.size()-pass) );//diag
+      //System.out.println( "\nbegin pass " + (ow.size()-pass) );//diag
       maxPos = 0;
       for( int i = 1; i <= pass; i++ ) {
-        System.out.println( "maxPos: " + maxPos );//diag
-        System.out.println( ow );//diag
+        //System.out.println( "maxPos: " + maxPos );//diag
+        //System.out.println( ow );//diag
         if ( ow.get(i).compareTo( ow.get(maxPos) ) > 0 )
           maxPos = i;
       }
       ow.set( maxPos, ( ow.set( pass, ow.get(maxPos) ) ) );
-      System.out.println( "after swap: " +  ow );//diag
+      //System.out.println( "after swap: " +  ow );//diag
     }
   }
 
@@ -67,8 +67,8 @@ public class Sorts{
       //partition marks first item in unsorted region
 
       //diag:
-      System.out.println( "\npartition: " + partition + "\towset:");
-      System.out.println( ow );
+      //System.out.println( "\npartition: " + partition + "\towset:");
+      //System.out.println( ow );
 
       //traverse sorted region from right to left
       for( int i = partition; i > 0; i-- ) {
@@ -77,7 +77,7 @@ public class Sorts{
         // by swapping adjacent items
         if ( ow.get(i).compareTo( ow.get(i-1) ) < 0 ) {
           //diag:
-          System.out.println( "swap indices "+(i-1)+" & "+i+"..." );
+          //System.out.println( "swap indices "+(i-1)+" & "+i+"..." );
           ow.set( i, ow.set( i-1, ow.get(i) ) );
         }
         else
