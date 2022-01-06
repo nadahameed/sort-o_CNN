@@ -26,7 +26,7 @@ public class Sorts{
     }
   }
 
-  public void bubble(ArrayList<Comparable> ow) {
+  public static void bubble(ArrayList<Comparable> ow) {
     for( int passCtr = 1; passCtr < ow.size(); passCtr++ ) {
       System.out.println( "commencing pass #" + passCtr + "..." );
 
@@ -42,7 +42,7 @@ public class Sorts{
     }
   }
 
-  public void selection(ArrayList<Comparable> ow) {
+  public static void selection(ArrayList<Comparable> ow) {
     //note: this version places greatest value at rightmost end,
 
     //maxPos will point to position of SELECTION (greatest value)
@@ -62,7 +62,7 @@ public class Sorts{
     }
   }
 
-  public void insertion(ArrayList<Comparable> ow) {
+  public static void insertion(ArrayList<Comparable> ow) {
     for( int partition = 1; partition < ow.size(); partition++ ) {
       //partition marks first item in unsorted region
 
