@@ -10,6 +10,7 @@ public class Driver{
     glen0.add(5);
     glen0.add(12);
     glen0.add(3);
+    System.out.println("BUBBLE SORT:");
     System.out.println( "\nArrayList glen0 before sorting:\n" + glen0 );
     Sorts.bubble(glen0);
     System.out.println( "\nArrayList glen0 after sorting:\n" + glen0 );
@@ -19,6 +20,8 @@ public class Driver{
     Sorts.bubble(coco0);
     System.out.println( "\nArrayList coco0 after sorting:\n" + coco0 );
 
+    System.out.println("-----------------------");
+    
     //Selection sort
     ArrayList glen1 = new ArrayList<Integer>();
     glen1.add(7);
@@ -26,6 +29,7 @@ public class Driver{
     glen1.add(5);
     glen1.add(12);
     glen1.add(3);
+    System.out.println("SELECTION SORT:");
     System.out.println( "\nArrayList glen1 before sorting:\n" + glen1 );
     Sorts.selection(glen1);
     System.out.println( "\nArrayList glen1 after sorting:\n" + glen1 );
@@ -35,6 +39,8 @@ public class Driver{
     Sorts.selection(coco1);
     System.out.println( "\nArrayList coco1 after sorting:\n" + coco1 );
 
+    System.out.println("-----------------------");
+    
     //Insertion sort
     ArrayList glen2 = new ArrayList<Integer>();
     glen2.add(7);
@@ -42,6 +48,7 @@ public class Driver{
     glen2.add(5);
     glen2.add(12);
     glen2.add(3);
+    System.out.println("INSERTION SORT:");
     System.out.println( "\nArrayList glen2 before sorting:\n" + glen2 );
     Sorts.insertion(glen2);
     System.out.println( "\nArrayList glen2 after sorting:\n" + glen2 );
