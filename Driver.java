@@ -21,7 +21,7 @@ public class Driver{
     System.out.println( "\nArrayList coco0 after sorting:\n" + coco0 );
 
     System.out.println("-----------------------");
-    
+
     //Selection sort
     ArrayList glen1 = new ArrayList<Integer>();
     glen1.add(7);
@@ -40,7 +40,7 @@ public class Driver{
     System.out.println( "\nArrayList coco1 after sorting:\n" + coco1 );
 
     System.out.println("-----------------------");
-    
+
     //Insertion sort
     ArrayList glen2 = new ArrayList<Integer>();
     glen2.add(7);
