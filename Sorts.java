@@ -46,8 +46,8 @@ public class Sorts{
       }
       // This will print out multiple times depending on how many passes were made.
       // The total number of coparisons would be if we add up all the comparisons made per pass.
-      System.out.println("The number of comparisons made is " + cmpr + ".");
     }
+    System.out.println("The number of comparisons made is " + cmpr + ".");
   }
 
 // Selection Sort
@@ -68,11 +68,11 @@ public class Sorts{
           maxPos = i;
           cmpr++;
         }
-        System.out.println("The number of comparisons made is " + cmpr + ".");
       }
       ow.set( maxPos, ( ow.set( pass, ow.get(maxPos) ) ) );
       //System.out.println( "after swap: " +  ow );//diag
     }
+    System.out.println("The number of comparisons made is " + cmpr + ".");
   }
 
 // Insertion sort
@@ -99,8 +99,8 @@ public class Sorts{
         else
           break;
       }
-      System.out.println("The number of comparisons made is " + cmpr + ".");
     }
+    System.out.println("The number of comparisons made is " + cmpr + ".");
   }
 
 }
