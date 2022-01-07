@@ -1,4 +1,5 @@
-# sort-o_CNN: Nicole Zhou + Duck, Nada Hameed + Ray, Corina Chen + BinkTop
+# CNN: Nicole Zhou + Duck, Nada Hameed + Ray, Corina Chen + BinkTop
+### Song of the Week: LET'S NOT FAIL THIS LAB
 
 ### Bubble Sort
 * Best case: They're all sorted.
