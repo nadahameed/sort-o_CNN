@@ -4,6 +4,7 @@ Lab04: Never Fear, Big O is Here!
 1-10-2022
 
 DISCO
+- In Bubble Sort, it seems like swaps with itself counts as swaps as well.
 QCC
 
 BUB-QA (Q’s and their A’s from header comment)

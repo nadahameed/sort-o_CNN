@@ -13,7 +13,6 @@ public class Driver {
     System.out.println("BUBBLE SORT:");
     System.out.println( "\nArrayList glen0 is size " + glen0.size() + " and shuffled.");
     Sorts.bubble(glen0);
-    System.out.println(glen0);
 
     ArrayList coco0 = Sorts.populate( 10, 1, 1000 );
     System.out.println( "\nArrayList coco0 is size " + coco0.size() + " and shuffled.");
@@ -26,10 +25,21 @@ public class Driver {
     sortedT1.add(3);
     sortedT1.add(4);
     sortedT1.add(5);
-    System.out.println(sortedT1);
+    System.out.println( "ArrayList reverse1 is size " + sortedT1.size() + " and shuffled.");
     Sorts.bubble(sortedT1);
-    System.out.println(sortedT1);
     //Swaps with itself seems like swaps too
+
+    //Testing reverse sorted
+    System.out.println("\nTesting reversed:");
+    ArrayList reverse1 = new ArrayList<Integer>();
+    reverse1.add(5);
+    reverse1.add(4);
+    reverse1.add(3);
+    reverse1.add(2);
+    reverse1.add(1);
+    System.out.println( "ArrayList reverse1 is size " + reverse1.size() + " and shuffled.");
+    Sorts.bubble(reverse1);
+
 
     System.out.println("-----------------------");
 
@@ -55,7 +65,19 @@ public class Driver {
     sortedT2.add(3);
     sortedT2.add(4);
     sortedT2.add(5);
+    System.out.println( "ArrayList sortedT2 is size " + sortedT2.size() + " and shuffled.");
     Sorts.selection(sortedT2);
+
+    //Testing reverse sorted
+    System.out.println("\nTesting reversed:");
+    ArrayList reverse2 = new ArrayList<Integer>();
+    reverse2.add(5);
+    reverse2.add(4);
+    reverse2.add(3);
+    reverse2.add(2);
+    reverse2.add(1);
+    System.out.println( "ArrayList reverse2 is size " + reverse2.size() + " and shuffled.");
+    Sorts.selection(reverse2);
 
     System.out.println("-----------------------");
 
@@ -81,8 +103,19 @@ public class Driver {
     sortedT3.add(3);
     sortedT3.add(4);
     sortedT3.add(5);
+    System.out.println( "ArrayList sortedT3 is size " + sortedT3.size() + " and shuffled.");
     Sorts.insertion(sortedT3);
 
+    //Testing reverse sorted
+    System.out.println("\nTesting reversed:");
+    ArrayList reverse3 = new ArrayList<Integer>();
+    reverse3.add(5);
+    reverse3.add(4);
+    reverse3.add(3);
+    reverse3.add(2);
+    reverse3.add(1);
+    System.out.println( "ArrayList reverse3 is size " + reverse3.size() + " and shuffled.");
+    Sorts.insertion(reverse3);
 
   }
 }
