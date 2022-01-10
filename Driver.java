@@ -11,9 +11,8 @@ public class Driver{
     glen0.add(12);
     glen0.add(3);
     System.out.println("BUBBLE SORT:");
-    System.out.println( "\nArrayList glen0 before sorting:\n" + glen0 );
+    System.out.println( "\nArrayList glen0 is size " + glen.size() + " and shuffled.");
     Sorts.bubble(glen0);
-    System.out.println( "\nArrayList glen0 after sorting:\n" + glen0 );
 
     ArrayList coco0 = Sorts.populate( 10, 1, 1000 );
     System.out.println( "\nArrayList coco0 before sorting:\n" + coco0 );
