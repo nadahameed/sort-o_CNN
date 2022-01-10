@@ -15,9 +15,8 @@ public class Driver{
     Sorts.bubble(glen0);
 
     ArrayList coco0 = Sorts.populate( 10, 1, 1000 );
-    System.out.println( "\nArrayList coco0 before sorting:\n" + coco0 );
+    System.out.println( "\nArrayList coco0 is size " + coco0.size() + " and shuffled.");
     Sorts.bubble(coco0);
-    System.out.println( "\nArrayList coco0 after sorting:\n" + coco0 );
 
     System.out.println("-----------------------");
 
@@ -29,14 +28,12 @@ public class Driver{
     glen1.add(12);
     glen1.add(3);
     System.out.println("SELECTION SORT:");
-    System.out.println( "\nArrayList glen1 before sorting:\n" + glen1 );
+    System.out.println( "\nArrayList glen1 is size " + glen1.size() + " and shuffled.");
     Sorts.selection(glen1);
-    System.out.println( "\nArrayList glen1 after sorting:\n" + glen1 );
 
     ArrayList coco1 = Sorts.populate( 10, 1, 1000 );
-    System.out.println( "\nArrayList coco1 before sorting:\n" + coco1 );
+    System.out.println( "\nArrayList coco1 is size " + coco1.size() + " and shuffled.");
     Sorts.selection(coco1);
-    System.out.println( "\nArrayList coco1 after sorting:\n" + coco1 );
 
     System.out.println("-----------------------");
 
@@ -48,14 +45,12 @@ public class Driver{
     glen2.add(12);
     glen2.add(3);
     System.out.println("INSERTION SORT:");
-    System.out.println( "\nArrayList glen2 before sorting:\n" + glen2 );
+    System.out.println( "\nArrayList glen2 is size " + glen2.size() + " and shuffled.");
     Sorts.insertion(glen2);
-    System.out.println( "\nArrayList glen2 after sorting:\n" + glen2 );
 
     ArrayList coco2 = Sorts.populate( 10, 1, 1000 );
-    System.out.println( "\nArrayList coco2 before sorting:\n" + coco2 );
+    System.out.println( "\nArrayList coco2 is size " + coco2.size() + " and shuffled.");
     Sorts.insertion(coco2);
-    System.out.println( "\nArrayList coco2 after sorting:\n" + coco2 );
 
 
   }
