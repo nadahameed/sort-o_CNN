@@ -13,6 +13,8 @@
 
 * Worst Case: None
 
+ * Therefore time complexity will always be O(n^2)
+
 ### Insertion Sort
 * Best case - O(n): They're all sorted.
   * No swaps will be done and fewer comparisons will be made.
