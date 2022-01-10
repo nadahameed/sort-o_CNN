@@ -31,17 +31,15 @@ public class Sorts{
 
 // Bubble Sort
   public static void bubble(ArrayList<Comparable> ow) {
-    //int cmpr = 0;
-    
     //swap counter
     int swpcnt = 0;
-    
     //comparison counter
     int cmprcnt = 0;
-    
+    //pass counter
+    int pscnt = 0;
     for( int passCtr = 1; passCtr < ow.size(); passCtr++ ) {
       //System.out.println( "commencing pass #" + passCtr + "..." );
-
+      pscnt++;
       //iterate thru first to next-to-last element, comparing to next
       for( int i = 0; i < ow.size()-1; i++ ) {
         cmprcnt++;
@@ -56,6 +54,7 @@ public class Sorts{
     }
     System.out.println("The number of comparisons is " + cmprcnt + ".");
     System.out.println("The number of swaps made is " + swpcnt + ".");
+    System.out.println("The number of passes is " + pscnt + ".");
   }
 
 // Selection Sort
@@ -64,16 +63,17 @@ public class Sorts{
 
     //maxPos will point to position of SELECTION (greatest value)
     int maxPos;
-    //int cmpr = 0;
     
     //swap counter
     int swpcnt = 0;
-
     //comparison counter
     int cmprcnt = 0;
+    //pass counter
+    int pscnt = 0;
     
     for( int pass = ow.size()-1; pass > 0; pass-- ) {
       //System.out.println( "\nbegin pass " + (ow.size()-pass) );//diag
+      pscnt++;
       maxPos = 0;
       for( int i = 1; i <= pass; i++ ) {
         cmprcnt++;
@@ -89,17 +89,17 @@ public class Sorts{
     }
     System.out.println("The number of comparisons is " + cmprcnt + ".");
     System.out.println("The number of swaps made is " + swpcnt + ".");
+    System.out.println("The number of passes is " + pscnt + ".");
   }
 
 // Insertion sort
   public static void insertion(ArrayList<Comparable> ow) {
-    //int cmpr = 0;
-    
     //swap counter
     int swpcnt = 0;
-    
     //comparison counter
     int cmprcnt = 0;
+    //pass counter
+    int pscnt = 0;
     
     for( int partition = 1; partition < ow.size(); partition++ ) {
       //partition marks first item in unsorted region
@@ -107,7 +107,7 @@ public class Sorts{
       //diag:
       //System.out.println( "\npartition: " + partition + "\towset:");
       //System.out.println( ow );
-
+      pscnt++;
       //traverse sorted region from right to left
       for( int i = partition; i > 0; i-- ) {
         cmprcnt++;
@@ -125,6 +125,7 @@ public class Sorts{
     }
     System.out.println("The number of comparisons is " + cmprcnt + ".");
     System.out.println("The number of comparisons made is " + swpcnt + ".");
+    System.out.println("The number of passes is " + pscnt + ".");
   }
 
 }
