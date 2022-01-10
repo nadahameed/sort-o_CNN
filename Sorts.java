@@ -38,12 +38,13 @@ public class Sorts{
     
     //comparison counter
     int cmprcnt = 0;
+    
     for( int passCtr = 1; passCtr < ow.size(); passCtr++ ) {
       //System.out.println( "commencing pass #" + passCtr + "..." );
 
       //iterate thru first to next-to-last element, comparing to next
       for( int i = 0; i < ow.size()-1; i++ ) {
-
+        cmprcnt++;
         //if element at i > element at i+1, swap
         if ( ow.get(i).compareTo(ow.get(i+1) ) > 0 )
           ow.set( i, ow.set(i+1,ow.get(i)) );
@@ -53,7 +54,7 @@ public class Sorts{
       // This will print out multiple times depending on how many passes were made.
       // The total number of coparisons would be if we add up all the comparisons made per pass.
     }
-    System.out.println("The number of comparisons is " + i + ".");
+    System.out.println("The number of comparisons is " + cmprcnt + ".");
     System.out.println("The number of swaps made is " + swpcnt + ".");
   }
 
@@ -64,13 +65,18 @@ public class Sorts{
     //maxPos will point to position of SELECTION (greatest value)
     int maxPos;
     //int cmpr = 0;
+    
     //swap counter
     int swpcnt = 0;
 
+    //comparison counter
+    int cmprcnt = 0;
+    
     for( int pass = ow.size()-1; pass > 0; pass-- ) {
       //System.out.println( "\nbegin pass " + (ow.size()-pass) );//diag
       maxPos = 0;
       for( int i = 1; i <= pass; i++ ) {
+        cmprcnt++;
         //System.out.println( "maxPos: " + maxPos );//diag
         //System.out.println( ow );//diag
         if ( ow.get(i).compareTo( ow.get(maxPos) ) > 0 ) {
@@ -81,7 +87,7 @@ public class Sorts{
       ow.set( maxPos, ( ow.set( pass, ow.get(maxPos) ) ) );
       //System.out.println( "after swap: " +  ow );//diag
     }
-    System.out.println("The number of comparisons is " + i + ".");
+    System.out.println("The number of comparisons is " + cmprcnt + ".");
     System.out.println("The number of swaps made is " + swpcnt + ".");
   }
 
@@ -92,6 +98,9 @@ public class Sorts{
     //swap counter
     int swpcnt = 0;
     
+    //comparison counter
+    int cmprcnt = 0;
+    
     for( int partition = 1; partition < ow.size(); partition++ ) {
       //partition marks first item in unsorted region
 
@@ -101,7 +110,7 @@ public class Sorts{
 
       //traverse sorted region from right to left
       for( int i = partition; i > 0; i-- ) {
-
+        cmprcnt++;
         // "walk" the current item to where it belongs
         // by swapping adjacent items
         if ( ow.get(i).compareTo( ow.get(i-1) ) < 0 ) {
@@ -114,7 +123,7 @@ public class Sorts{
           break;
       }
     }
-    System.out.println("The number of comparisons is " + i + ".");
+    System.out.println("The number of comparisons is " + cmprcnt + ".");
     System.out.println("The number of comparisons made is " + swpcnt + ".");
   }
 
