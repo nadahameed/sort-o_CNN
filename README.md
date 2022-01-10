@@ -1,5 +1,5 @@
 # CNN: Nicole Zhou + Duck, Nada Hameed + Ray, Corina Chen + BinkTop
-### Song of the Week: LET'S NOT FAIL THIS LAB
+### Song of the Week: The Duck Song / Bryant Oden
 
 ### Bubble Sort
 * Best Case: They're all sorted.
