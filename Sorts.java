@@ -42,9 +42,10 @@ public class Sorts{
       for( int i = 0; i < ow.size()-1; i++ ) {
         cmprcnt++;
         //if element at i > element at i+1, swap
-        if ( ow.get(i).compareTo(ow.get(i+1) ) > 0 )
+        if ( ow.get(i).compareTo(ow.get(i+1) ) > 0 ){
           ow.set( i, ow.set(i+1,ow.get(i)) );
           swpcnt++;
+        }
         //System.out.println(ow); //diag: show current state of list
       }
       // This will print out multiple times depending on how many passes were made.
