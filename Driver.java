@@ -3,6 +3,8 @@ import java.util.ArrayList;
 public class Driver {
   public static void main(String[] args) {
 
+    System.out.println("-----------------------");
+
     //Bubble sort
     ArrayList glen0 = new ArrayList<Integer>();
     glen0.add(7);
@@ -25,7 +27,7 @@ public class Driver {
     sortedT1.add(3);
     sortedT1.add(4);
     sortedT1.add(5);
-    System.out.println( "ArrayList reverse1 is size " + sortedT1.size() + " and shuffled.");
+    System.out.println( "ArrayList sortedT1 is size " + sortedT1.size() + ".");
     Sorts.bubble(sortedT1);
     //Swaps with itself seems like swaps too
 
@@ -37,7 +39,7 @@ public class Driver {
     reverse1.add(3);
     reverse1.add(2);
     reverse1.add(1);
-    System.out.println( "ArrayList reverse1 is size " + reverse1.size() + " and shuffled.");
+    System.out.println( "ArrayList reverse1 is size " + reverse1.size() + ".");
     Sorts.bubble(reverse1);
 
 
@@ -65,7 +67,7 @@ public class Driver {
     sortedT2.add(3);
     sortedT2.add(4);
     sortedT2.add(5);
-    System.out.println( "ArrayList sortedT2 is size " + sortedT2.size() + " and shuffled.");
+    System.out.println( "ArrayList sortedT2 is size " + sortedT2.size() + ".");
     Sorts.selection(sortedT2);
 
     //Testing reverse sorted
@@ -76,7 +78,7 @@ public class Driver {
     reverse2.add(3);
     reverse2.add(2);
     reverse2.add(1);
-    System.out.println( "ArrayList reverse2 is size " + reverse2.size() + " and shuffled.");
+    System.out.println( "ArrayList reverse2 is size " + reverse2.size() + ".");
     Sorts.selection(reverse2);
 
     System.out.println("-----------------------");
@@ -103,7 +105,7 @@ public class Driver {
     sortedT3.add(3);
     sortedT3.add(4);
     sortedT3.add(5);
-    System.out.println( "ArrayList sortedT3 is size " + sortedT3.size() + " and shuffled.");
+    System.out.println( "ArrayList sortedT3 is size " + sortedT3.size() + ".");
     Sorts.insertion(sortedT3);
 
     //Testing reverse sorted
@@ -114,7 +116,7 @@ public class Driver {
     reverse3.add(3);
     reverse3.add(2);
     reverse3.add(1);
-    System.out.println( "ArrayList reverse3 is size " + reverse3.size() + " and shuffled.");
+    System.out.println( "ArrayList reverse3 is size " + reverse3.size() + ".");
     Sorts.insertion(reverse3);
 
   }
