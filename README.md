@@ -2,16 +2,17 @@
 ### Song of the Week: LET'S NOT FAIL THIS LAB
 
 ### Bubble Sort
-* Best case: They're all sorted.
+* Best Case: They're all sorted because then it would take
 
-* Worst Case:
+* Worst Case: They're in reverse order.
+
 
 ### Selection Sort
-* Best case: They're all sorted.
+* Best Case:
 
-* Worst Case:
+* WOrst Case: 
 
 ### Insertion Sort
 * Best case: They're all sorted.
 
-* Worst Case:
+* Worst Case: In reverse order

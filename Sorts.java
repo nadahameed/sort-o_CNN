@@ -122,7 +122,7 @@ public class Sorts{
       }
     }
     System.out.println("The number of comparisons is " + cmprcnt + ".");
-    System.out.println("The number of comparisons made is " + swpcnt + ".");
+    System.out.println("The number of swaps made is " + swpcnt + ".");
     System.out.println("The number of passes is " + pscnt + ".");
   }
 
