@@ -1,1 +1,38 @@
 Corina Chen + BinkTop, Nada Hameed + Ray, Nicole Zhou + Duck
+APCS pd06
+Lab04: Never Fear, Big O is Here!
+1-10-2022
+
+DISCO
+QCC
+
+BUB-QA (Q’s and their A’s from header comment)
+q0: If a pass requires no swaps, what do you know?
+a0: the array is sorted
+q1: After pass p, what do you know?
+a1: that the first p objects are sorted
+q2: How many passes are necessary to completely sort?
+a2: the number of elements - 1
+
+SEL-QA (Q’s and their A’s from header comment)
+q0: How many passes to sort n elements?
+a0: n-1 passes
+q1: What do you know after pass p?
+a1: the first p elements have been sorted
+q2: How do you know if sorted?
+a2: it is in the order you want it to be in
+q3: What does a pass boil down to?
+a3: it's simply the action of seeking for the item you wish to find and then
+switching it into the position that is allocated for it
+
+INS-QA (Q’s and their A’s from header comment)
+q0: How many passes to sort n elements?
+a0: n-1 passes
+q1: What do you know after pass p?
+a1: p objects are sorted
+q2: How will you know when sorted?
+a2: the last element of the original array is in the correct place
+q3: What constitutes a pass?
+a3: one traversion of the elements in a partition
+q4: What must you track?
+a4: number of partitions

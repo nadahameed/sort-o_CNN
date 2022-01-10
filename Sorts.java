@@ -1,5 +1,3 @@
-// *** Goal: Make comparison total instead of printing per for loop
-
 import java.util.ArrayList;
 
 public class Sorts{
@@ -63,14 +61,14 @@ public class Sorts{
 
     //maxPos will point to position of SELECTION (greatest value)
     int maxPos;
-    
+
     //swap counter
     int swpcnt = 0;
     //comparison counter
     int cmprcnt = 0;
     //pass counter
     int pscnt = 0;
-    
+
     for( int pass = ow.size()-1; pass > 0; pass-- ) {
       //System.out.println( "\nbegin pass " + (ow.size()-pass) );//diag
       pscnt++;
@@ -100,7 +98,7 @@ public class Sorts{
     int cmprcnt = 0;
     //pass counter
     int pscnt = 0;
-    
+
     for( int partition = 1; partition < ow.size(); partition++ ) {
       //partition marks first item in unsorted region
 
