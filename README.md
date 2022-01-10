@@ -27,3 +27,4 @@ The number of passes is 4.
 ```
 * Worst Case - O(n^2): In reverse order.
   * Per pass, the maximum number of swaps is made inside the partition in order to make it sorted. As a result, the number of swaps is the partition's index.
+  * This results in a quadratic relationship, because the number of passes is n - 1, and within each pass, the maximum number of swaps is made.
