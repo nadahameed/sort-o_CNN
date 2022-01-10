@@ -31,7 +31,13 @@ public class Sorts{
 
 // Bubble Sort
   public static void bubble(ArrayList<Comparable> ow) {
-    int cmpr = 0;
+    //int cmpr = 0;
+    
+    //swap counter
+    int swpcnt = 0;
+    
+    //comparison counter
+    int cmprcnt = 0;
     for( int passCtr = 1; passCtr < ow.size(); passCtr++ ) {
       //System.out.println( "commencing pass #" + passCtr + "..." );
 
@@ -41,13 +47,14 @@ public class Sorts{
         //if element at i > element at i+1, swap
         if ( ow.get(i).compareTo(ow.get(i+1) ) > 0 )
           ow.set( i, ow.set(i+1,ow.get(i)) );
-          cmpr++;
+          swpcnt++;
         //System.out.println(ow); //diag: show current state of list
       }
       // This will print out multiple times depending on how many passes were made.
       // The total number of coparisons would be if we add up all the comparisons made per pass.
     }
-    System.out.println("The number of comparisons made is " + cmpr + ".");
+    System.out.println("The number of comparisons is " + i + ".");
+    System.out.println("The number of swaps made is " + swpcnt + ".");
   }
 
 // Selection Sort
@@ -56,7 +63,9 @@ public class Sorts{
 
     //maxPos will point to position of SELECTION (greatest value)
     int maxPos;
-    int cmpr = 0;
+    //int cmpr = 0;
+    //swap counter
+    int swpcnt = 0;
 
     for( int pass = ow.size()-1; pass > 0; pass-- ) {
       //System.out.println( "\nbegin pass " + (ow.size()-pass) );//diag
@@ -66,18 +75,23 @@ public class Sorts{
         //System.out.println( ow );//diag
         if ( ow.get(i).compareTo( ow.get(maxPos) ) > 0 ) {
           maxPos = i;
-          cmpr++;
+          swpcnt++;
         }
       }
       ow.set( maxPos, ( ow.set( pass, ow.get(maxPos) ) ) );
       //System.out.println( "after swap: " +  ow );//diag
     }
-    System.out.println("The number of comparisons made is " + cmpr + ".");
+    System.out.println("The number of comparisons is " + i + ".");
+    System.out.println("The number of swaps made is " + swpcnt + ".");
   }
 
 // Insertion sort
   public static void insertion(ArrayList<Comparable> ow) {
-    int cmpr = 0;
+    //int cmpr = 0;
+    
+    //swap counter
+    int swpcnt = 0;
+    
     for( int partition = 1; partition < ow.size(); partition++ ) {
       //partition marks first item in unsorted region
 
@@ -94,13 +108,14 @@ public class Sorts{
           //diag:
           //System.out.println( "swap indices "+(i-1)+" & "+i+"..." );
           ow.set( i, ow.set( i-1, ow.get(i) ) );
-          cmpr++;
+          swpcnt++;
         }
         else
           break;
       }
     }
-    System.out.println("The number of comparisons made is " + cmpr + ".");
+    System.out.println("The number of comparisons is " + i + ".");
+    System.out.println("The number of comparisons made is " + swpcnt + ".");
   }
 
 }
