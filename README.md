@@ -2,18 +2,19 @@
 ### Song of the Week: The Duck Song / Bryant Oden
 
 ### Bubble Sort
-* Best Case: They're all sorted.
+* Best Case - O(n): They're all sorted.
+  * The number of passes depends on the size of the ArrayList; if the size is n, the number of passes is n - 1. 
 
-* Worst Case: They're in reverse order.
+* Worst Case - O(n^2): They're in reverse order.
 
 
 ### Selection Sort
-* Best Case:
+* Best Case: None
 
-* Worst Case:
+* Worst Case: None
 
 ### Insertion Sort
-* Best case - 0(n): They're all sorted.
+* Best case - O(n): They're all sorted.
   * No swaps will be done and fewer comparisons will be made.
   * For sorted array of 5:
 ```
